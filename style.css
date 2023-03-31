@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+  }
+
+body {
+    position: absolute;
+    
+}  
+
+.image {
+    box-sizing: border-box;
+    position: relative;
+    width: 213px;
+    height: 213px;
+    left: 619px;
+    top: 17px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+    
+    background-color: var(--body-bg-color)
+}
+
+
+.elipse {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 4.5px;
+    top: 4.5px;
+    border-radius: 50%;
+
+    background: url(./assets/images.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+span {
+    position: absolute;
+    width: 99px;
+    height: 24px;
+    left: 669px;
+    top: 239px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color:  var(--purple)
+}
+
+.links {
+    display: flex;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 326px;
+    height: 260px;
+    left: 556px;
+    top: 285px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;   
+    
+}
+
+.links a {
+    box-sizing: border-box;
+    display: flex;
+    width: 326px;
+    height: 50px;
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+    color: var(--purple);
+
+    align-items: center;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.media {
+    display: flex;
+    position: absolute;
+    width: 326px;
+    height: 24px;
+    left: 555px;
+    top: 598px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+@media screen and (max-width:414px) {
+    .image {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        left: 107px;
+        top: 126px;
+    }
+    
+    .elipse {
+        width: 195px;
+        height: 195px;
+        left: 0.8px;
+        top: 0.8px;
+    }
+    
+    span {
+        position: absolute;
+        width: 99px;
+        height: 24px;
+        left: 157px;
+        top: 348px;
+
+    }
+
+    .links {
+        position: absolute;
+        width: 326px;
+        height: 49px;
+        left: 44px;
+        top: 455px; 
+    }
+
+    .media {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 187px;
+        top: 617px;
+
+    }
+   
+}
